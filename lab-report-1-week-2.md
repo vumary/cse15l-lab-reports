@@ -23,10 +23,10 @@ Congrats! You're terminal is now connected to a computer in the CSE basement, an
 ## 3. Trying Some Commands
 Some of the basic commands:
 
+* `pwd` - print working directory
+* `ls` - list files in current directory
 * `cd` - change directory 
 * `cd ..` - change to parent directory of current directory
-* `ls` - list files in current directory
-* `pwd` - print working directory
 * `cp` - copy files or group of files or directory
 * `cd ~` - returns you to your user account's home folder.
 * `ls -a` - list all files in current directory including hidden files
@@ -36,6 +36,7 @@ Try running some of these commands on your computer, and on the remote computer 
 
 It should look something like this:
 
+![image](trying-some-commands.png)
 
 
 
