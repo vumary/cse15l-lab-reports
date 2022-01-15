@@ -57,6 +57,30 @@ Now, to test it, log into ieng6 with `ssh` and run `ls`. If you've done it corre
 
 ![image](copying-file-to-server.png)
 
+## 5. Setting an SSH Key
+You may have noticed that when you login using `ssh` or when you use `scp`, you've had to type your password. The solution to avoiding this repetitive process is using `ssh` keys  
 
+ > Note: The idea behind ssh keys is that a program, called ssh-keygen, creates a pair of files called the public key and private key. You copy the public key to a particular location on the server, and the private key in a particular location on the client. Then, the ssh command can use the pair of files in place of your password. This is a common setup step in lots of work environments that involve code on a server. (description copied from week 1's lab)
+
+Here's how to set up the 'ssh' key: 
+
+First, run `ssh-keygen`, then it will prompt you to enter a passphrase. For now, leave the passphrase empty by pressing `enter`. When it asks you to "enter the same passphrase again", press `enter` again.
+
+Then, copy the *public* key to the `.ssh` directory of your user account on the server by running these commands: 
+
+`$ ssh cs15lwi22zz@ieng6.ucsd.edu`
+
+`$ mkdir .ssh`
+
+`$ exit`
+
+`$ scp /Users/<your-username>/.ssh/id_rsa.pub cs15lwi22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys`
+
+> Common error: Forgetting to replace `zz`. (In the screenshots below, you can actually see me make this error.)
+
+The whole process should look something like this: 
+
+![image](creating-ssh-key-1.png)
+![image](creating-ssh-key-2.png)
 
 
