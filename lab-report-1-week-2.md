@@ -60,7 +60,7 @@ Now, to test it, log into ieng6 with `ssh` and run `ls`. If you've done it corre
 ## 5. Setting an SSH Key
 You may have noticed that when you login using `ssh` or when you use `scp`, you've had to type your password. The solution to avoiding this repetitive process is using `ssh` keys  
 
- > Note: The idea behind ssh keys is that a program, called ssh-keygen, creates a pair of files called the public key and private key. You copy the public key to a particular location on the server, and the private key in a particular location on the client. Then, the ssh command can use the pair of files in place of your password. This is a common setup step in lots of work environments that involve code on a server. (description copied from week 1's lab)
+ > Note: The idea behind ssh keys is that a program, called ssh-keygen, creates a pair of files called the public key and private key. You copy the public key to a particular location on the server, and the private key in a particular location on the client. Then, the ssh command can use the pair of files in place of your password. This is a common setup step in lots of work environments that involve code on a server. (description copied from week 1 lab)
 
 Here's how to set up the 'ssh' key: 
 
@@ -82,5 +82,28 @@ The whole process should look something like this:
 
 ![image](creating-ssh-key-1.png)
 ![image](creating-ssh-key-2.png)
+
+## 6. Optimizing Remote Running
+Some tips and tricks:
+* Run multiple commands on the same terminal line by separating them using semicolons i.e.
+
+`$ javac HelloWorld.java; java HelloWorld`
+
+* Run a command directly on the remote server, then exit by putting your command(s) in quotes, at the end of an `ssh` command i.e.
+
+`$ ssh cs15lwi22@ieng6.ucsd.edu "ls"`
+
+* You can combine these tricks to run multiple commands on the remote server and then exit, all in one terminal line i.e.
+
+`$ ssh cs15lwi22zz@ieng6.ucsd.edu "javac HelloWorld.java; java HelloWorld"`
+
+ Try some of these our on your own and it should look something like this:
+
+ ![image](optimizing-remote-running-1.png)
+
+ Or something like this:
+
+ ![image](optimizing-remote-running-2.png)
+
 
 
