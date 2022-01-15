@@ -8,7 +8,7 @@ Download Visual Studio Code [here](https://code.visualstudio.com/) and follow th
 ## 2. Remotely Connecting
 First, open a terminal in VS Code (Control + \` or use the Terminal → New Terminal menu option). Then, type the following command but replace the `zz` with the letters in your course-specific account.
 
-> `$ ssh cs15lwi22zz@ieng6.ucsd.edu`
+`$ ssh cs15lwi22zz@ieng6.ucsd.edu`
 
 If it's your first time connecting to the server, it may prompt you with a question. In that case, type `yes`.
 
