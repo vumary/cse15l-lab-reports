@@ -97,13 +97,21 @@ Some tips and tricks:
 
 `$ ssh cs15lwi22zz@ieng6.ucsd.edu "javac HelloWorld.java; java HelloWorld"`
 
+* You can use the up-arrow on your keyboard to recall the last command that was run
+
  Try some of these our on your own and it should look something like this:
 
  ![image](optimizing-remote-running-1.png)
 
+> Note: Because I already ran this command before, I used the up-arrow trick 5 times and then pressed `enter`. This took me 6 keystrokes compared to the 79 keystrokes I would've had to take if I didn't use all of the tricks and didn't set up an `ssh` key. 
+
  Or something like this:
 
  ![image](optimizing-remote-running-2.png)
+
+ > Note: I used up-arrow twice to recall `ssh cs15lwi22ahi@ieng6.ucsd.edu` then added `"javac HelloWorld.java java HelloWorld.java"` to the end of it, using a total of 43 keystrokes. This would haven't taken me 91 keystrokes if I didn't use all of the tricks and didn't set up an `ssh` key.
+
+ 
 
 
 
