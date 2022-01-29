@@ -19,3 +19,12 @@ The bug was that there was no updating of the currentIndex to make the while-loo
 The bug was that the program would attempt to create a substring despite the argument being a negative number. As you can guess, the symptom shown was an index out of bounds error. The specific failure inducing output I used was not including any parenthesis at all in the `.md` file.
 
 ## Bug 3
+
+![image](code-change-for-bug3.png)
+
+> [failure-inducing input](https://github.com/vumary/markdown-parse-lab-report-2/blob/main/test-file7.md)
+
+![image](bug-3-symptom.png)
+
+The bug was that the program would attempt to create a substring despite the argument being a negative number. As you can guess, the symptom shown was an index out of bounds error. The specific failure inducing output I used was not including any parenthesis at all in the `.md` file.
+
