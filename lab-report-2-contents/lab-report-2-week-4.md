@@ -26,5 +26,5 @@ The bug was that the program would attempt to create a substring despite the arg
 
 ![image](bug-3-symptom.png)
 
-The bug was that the program would attempt to create a substring despite the argument being a negative number. As you can guess, the symptom shown was an index out of bounds error. The specific failure inducing output I used was not including any parenthesis at all in the `.md` file.
+The bug was that the program would enter an infinite loop even though the `.md` file only has 2 character. The symptom shown was an infinite while-loop. The specific failure inducing output I used was only adding `)[` into the `.md` file.
 
